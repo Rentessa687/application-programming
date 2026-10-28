@@ -14,7 +14,7 @@ def main() -> None:
         if not result:
             print("Анкет с таким именем не найдено")
         else:
-            save_profiles(result, f"result_{args.name}.txt")
+            save_profiles(result, f"lab1/result_{args.name}.txt")
             print(f"Найдено анкет: {len(result)}")
     except FileNotFoundError as exc:
         print(f"Файл не найден: {exc}")
