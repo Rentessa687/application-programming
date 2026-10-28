@@ -1,5 +1,7 @@
 from lab1.cli import parse_arguments
-from lab1.profiles import read_file, split_profiles, find_by_name, save_profiles
+from lab1.profiles import (
+    read_file, split_profiles, find_by_name, save_profiles
+)
 
 
 def main() -> None:
