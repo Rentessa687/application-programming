@@ -32,7 +32,7 @@ def main() -> None:
         print(sorted_df[[RELATIVE_PATH, SAMPLES_COUNT]])
 
         filtered_df = filter_by_samples(sorted_df, args.min, args.max)
-        upper = args.max if args.max is not None else "∞"
+        upper = args.max if args.max is not None else "inf"
         print(f"\nФильтр [{args.min}; {upper}], найдено {len(filtered_df)}:")
         print(filtered_df[[RELATIVE_PATH, SAMPLES_COUNT]])
 
